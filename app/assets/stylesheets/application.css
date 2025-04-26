@@ -45,3 +45,22 @@
     margin-bottom: 1.5rem;
     color: var(--primary-dark);
   }
+
+  /* Layout Utilities */
+  .container {
+    background-color: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .margin-bottom {
+    margin-bottom: 1.5rem;
+  }
+  
+  .margin-top {
+    margin-top: 1.5rem;
+  }
+  
+  
