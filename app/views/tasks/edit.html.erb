@@ -1,0 +1,9 @@
+<!-- Edit page -->
+<div class="edit-container">
+  <h1 class="page-title">Editing Task</h1>
+
+  <div id="<%= dom_id @task %>">
+    <%= render "form", task: @task %>
+    <%= link_to "Never Mind", tasks_path, class: "btn btn-secondary" %>
+  </div>
+</div>

@@ -1,1 +1,22 @@
-<h1 class="font-bold text-2xl">Task Manager</h1>
+<!-- Index page -->
+<% if notice.present? %>
+  <p class="notification notification-success" id="notice">
+    <%= notice %>
+  </p>
+<% end %>
+
+<div class="container">
+  <h1 class="page-title">Task Manager</h1>
+
+  <div class="margin-top">
+    <%= render "form", task: @task %>
+  </div>
+
+  <div id="tasks" class="task-list">
+    <h1 class="section-title">Tasks</h1>
+
+    <div class="task-container" data-controller="tasks">
+      <%= render @tasks %>
+    </div>
+  </div>
+</div>
