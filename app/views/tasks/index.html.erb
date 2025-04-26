@@ -8,15 +8,13 @@
 <div class="container">
   <h1 class="page-title">Task Manager</h1>
 
-  <div class="margin-top">
-    <%= render "form", task: @task %>
-  </div>
+  <%= render "form", task: @task %>
 
-  <div id="tasks" class="task-list">
+  <div id="tasks" class="task-container">
     <h1 class="section-title">Tasks</h1>
 
-    <div class="task-container" data-controller="tasks">
+    <ul class="task-list" data-controller="tasks">
       <%= render @tasks %>
-    </div>
+    </ul>
   </div>
 </div>

@@ -1,5 +1,5 @@
 <!-- Task item -->
-<div class="task-item">
+<li class="task-item">
   <%= form_with(model: task, class: "task-description") do |form| %>
     <%= form.check_box :completed,
                      data: {
@@ -7,7 +7,7 @@
                        action: "tasks#toggle"
                      },
                      class: "task-checkbox" %>
-    <%= task.description %>
+    <p class="task-text"><%= task.description %></p>
   <% end %>
 
   <div class="task-actions">
@@ -19,4 +19,4 @@
                 data: { action: "tasks#delete" },
                 class: "btn btn-danger btn-small" %>
   </div>
-</div>
+</li>

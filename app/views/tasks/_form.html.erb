@@ -1,6 +1,6 @@
 <!-- Form partial -->
 <%= form_with(model: task, class: "form-container") do |form| %>
-  <div class="margin-bottom">
+  <div class="input-container">
     <%= form.text_field :description, placeholder: "Add new task", class: "input-field" %>
     <%= form.submit "Save", class: "btn btn-primary" %>
   </div>
