@@ -129,3 +129,44 @@
     font-size: 0.875rem;
   }
   
+  /* Task List Styles */
+  .task-list {
+    margin-top: 2rem;
+  }
+  
+  .task-container {
+    background-color: white;
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    box-shadow: var(--shadow);
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--gray-medium);
+  }
+  
+  .task-item:last-child {
+    border-bottom: none;
+  }
+  
+  .task-checkbox {
+    margin-right: 1rem;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+    accent-color: var(--success-color);
+  }
+  
+  .task-description {
+    flex-grow: 1;
+    font-size: 1.125rem;
+  }
+  
+  .task-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
