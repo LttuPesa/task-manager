@@ -25,3 +25,23 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+
+   /* Typography */
+   h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--primary-dark);
+  }
+  
+  h1.page-title {
+    border-bottom: 3px solid var(--primary-light);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  h1.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-dark);
+  }
