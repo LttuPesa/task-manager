@@ -170,3 +170,13 @@
     display: flex;
     gap: 0.5rem;
   }
+
+  /* Edit Form Styles */
+  .edit-container {
+    background-color: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
