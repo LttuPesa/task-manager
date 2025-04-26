@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+🚀 Task Manager APP
 
-Things you may want to cover:
+Task Manager adalah aplikasi to-do list sederhana berbasis Ruby on Rails + Hotwire yang memungkinkan kita untuk menambah, mengedit, dan menghapus tugas harian dengan cepat dan tanpa reload halaman.
 
-* Ruby version
+✨ Fitur Utama:
 
-* System dependencies
+✅ Menambahkan task
 
-* Configuration
+✏️ Edit task yang sudah ada
 
-* Database creation
+❌ Hapus task secara instan
 
-* Database initialization
+👀 Melihat Daftar Task
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Screenshot (148)](https://github.com/user-attachments/assets/c4e35404-bc06-4fb9-b8cd-184429093a80)
