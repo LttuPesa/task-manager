@@ -123,6 +123,10 @@
     background-color: var(--gray-light);
     color: var(--text-dark);
   }
+
+  .btn-secondary:hover{
+    color: var(--text-light);
+  }
   
   .btn-danger {
     background-color: var(--danger-color);
