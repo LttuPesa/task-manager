@@ -63,4 +63,20 @@
     margin-top: 1.5rem;
   }
   
+  /* Form Styles */
+  .form-container {
+    margin-bottom: 2rem;
+  }
+  
+  .input-field {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--gray-medium);
+    border-radius: var(--radius);
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.3s;
+  }
   
