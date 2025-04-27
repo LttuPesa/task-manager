@@ -5,7 +5,7 @@ export default class extends Controller {
 
     connect() {
         console.log("Task form controller connected", this.element)
-        // Disable tombol submit jika input kosong pada saat load
+        // Validasi saat awal load
         if (this.hasInputTarget) {
             this.validateInputWithoutError()
         }
@@ -20,8 +20,12 @@ export default class extends Controller {
         
         if (!input.value.trim()) {
             submitButton.disabled = true
+            submitButton.classList.add('btn-disabled')
+            submitButton.classList.remove('btn-primary')
         } else {
             submitButton.disabled = false
+            submitButton.classList.remove('btn-disabled')
+            submitButton.classList.add('btn-primary')
         }
     }
 
@@ -38,13 +42,13 @@ export default class extends Controller {
             if (!errorMessage) {
                 errorMessage = document.createElement('div')
                 errorMessage.className = 'error-message'
-                errorMessage.textContent = 'Input the task!'
+                errorMessage.textContent = 'Task tidak boleh kosong'
                 input.insertAdjacentElement('afterend', errorMessage)
             }
         }
     }
 
-    // Menghapus pesan error ketika user mulai mengetik
+    // Menghapus pesan error ketika user mulai mengetik dan update warna tombol
     hideError(e) {
         const input = e.target
         const submitButton = this.hasSubmitButtonTarget ? 
@@ -54,6 +58,8 @@ export default class extends Controller {
         if (input.value.trim()) {
             // Input valid, enable tombol submit dan hapus error
             submitButton.disabled = false
+            submitButton.classList.remove('btn-disabled')
+            submitButton.classList.add('btn-primary')
             input.classList.remove('invalid')
             
             // Hapus pesan error jika ada
@@ -62,8 +68,10 @@ export default class extends Controller {
                 errorMessage.remove()
             }
         } else {
-            // Input masih kosong, disable tombol
+            // Input masih kosong, disable tombol dan ubah warna
             submitButton.disabled = true
+            submitButton.classList.add('btn-disabled')
+            submitButton.classList.remove('btn-primary')
         }
     }
 }

@@ -115,10 +115,27 @@
   }
 
   .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--text-light);
+    background-color: (--primary-color);
+    border-color: (--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
   
+  .btn-disabled:hover {
+    color: #ffffff; /* Text menjadi putih terang saat hover */
+    background-color: #bbbbbb; /* Background sedikit lebih gelap untuk kontras */
+    border-color: #aaaaaa;
+  }
+
+  .btn-disabled {
+    background-color: #cccccc;
+    border-color: #bbbbbb;
+    color: #666666;
+    cursor: not-allowed;
+    transition: all 0.3s ease; /* Transisi yang halus saat perubahan */
+  }
+
   .btn-secondary {
     background-color: var(--gray-light);
     color: var(--text-dark);

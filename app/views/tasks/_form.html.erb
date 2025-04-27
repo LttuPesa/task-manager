@@ -13,6 +13,7 @@
       </div>
     <% end %>
     
-    <%= form.submit "Save", class: "btn btn-primary", data: { task_form_target: "submitButton" } %>
+    <% btn_class = task.description.present? ? "btn btn-primary" : "btn btn-disabled" %>
+    <%= form.submit "Save", class: btn_class, data: { task_form_target: "submitButton" } %>
   </div>
 <% end %>
