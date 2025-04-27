@@ -160,52 +160,62 @@
   
   /* Task List Styles */
 
-  .task-list {
-    background-color: white;
-    border-radius: var(--radius);
-    padding: 0.5rem 1rem;
-    box-shadow: var(--shadow);
-    margin-top: 0;
-  }
-  
-  .task-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--gray-medium);
-  }
-  
-  .task-item:last-child {
-    border-bottom: none;
-  }
-  
-  .task-checkbox {
-    margin-right: 1rem;
-    height: 1.25rem;
-    width: 1.25rem;
-    border-radius: 4px;
-    cursor: pointer;
-    accent-color: var(--success-color);
-  }
+  /* Task List Styles */
 
-  .task-description {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    flex-grow: 1;
-    font-size: 1.125rem;
-  }
-  
-  .task-text{
-    margin: 0;
-    overflow-wrap: anywhere;
-  }
+.task-list {
+  background-color: white;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--shadow);
+  margin-top: 0;
+}
 
-  .task-actions {
-    display: flex;
-    gap: 0.5rem;
-  }
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-medium);
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-checkbox {
+  margin-right: 1rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  accent-color: var(--success-color);
+}
+
+.task-description {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-grow: 1;
+  font-size: 1.125rem;
+}
+
+.task-text {
+  margin: 0;
+  overflow-wrap: anywhere;
+  transition: all 0.3s ease; /* Tambahkan transisi untuk efek halus */
+}
+
+/* Tambahkan style untuk teks yang dicoret */
+.task-text.completed {
+  text-decoration: line-through;
+  color: red;
+  opacity: 0.7;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
 
   /* Edit Form Styles */
   .edit-container {
