@@ -1,7 +1,18 @@
-<!-- Form partial -->
-<%= form_with(model: task, class: "form-container") do |form| %>
+<%= form_with(model: task, class: "form-container", data: { controller: "task-form", action: "submit->task-form#validateOnSubmit" }) do |form| %>
   <div class="input-container">
-    <%= form.text_field :description, placeholder: "Add new task", class: "input-field" %>
-    <%= form.submit "Save", class: "btn btn-primary" %>
+    <%= form.text_field :description, placeholder: "Add new task", class: "input-field", 
+        data: { 
+            task_form_target: "input", 
+            action: "input->task-form#hideError" 
+        } 
+    %>
+    
+    <% if task.errors.any? %>
+      <div class="error-message">
+        <%= task.errors.full_messages_for(:description).first %>
+      </div>
+    <% end %>
+    
+    <%= form.submit "Save", class: "btn btn-primary", data: { task_form_target: "submitButton" } %>
   </div>
 <% end %>
