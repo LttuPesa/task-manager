@@ -24,7 +24,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
-    background-color: #fafafa;
+    background-color: white;
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -54,8 +54,6 @@
   /* Layout Utilities */
   .container {
     background-color: white;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
     padding: 2rem;
   }
   
