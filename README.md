@@ -14,7 +14,5 @@ Task Manager adalah aplikasi to-do list sederhana berbasis Ruby on Rails + Hotwi
 
 👀 Melihat Daftar Task
 
-
-![Screenshot (150)](https://github.com/user-attachments/assets/86eb7c17-943a-4bd2-b161-bcf0689714ea)
-
-![Screenshot responsif](https://github.com/user-attachments/assets/4d0203e2-93e8-4afb-b3a9-a704eeed2b5e)
+![Screenshot (157)](https://github.com/user-attachments/assets/da4a9e98-0edf-4bf6-9f82-a6f24a37b4cf)
+![Screenshot (155)](https://github.com/user-attachments/assets/c39b271f-e9d5-47f7-9298-513e17b10efe)
