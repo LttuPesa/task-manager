@@ -10,6 +10,10 @@
     --gray-light: #f5f5f5;
     --gray-medium: #e0e0e0;
     --gray-dark: #757575;
+    --gray-bg: #bbbbbb;
+    --gray:  #aaaaaa;
+    --bg-light:  #cccccc;
+    --gray-bg2:  #666666;
     --text-dark: #212121;
     --text-light: #ffffff;
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -113,23 +117,23 @@
   }
 
   .btn-primary {
-    background-color: (--primary-color);
-    border-color: (--primary-color);
-    color: white;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
     cursor: pointer;
     transition: all 0.3s ease;
   }
   
   .btn-disabled:hover {
-    color: #ffffff; /* Text menjadi putih terang saat hover */
-    background-color: #bbbbbb; /* Background sedikit lebih gelap untuk kontras */
-    border-color: #aaaaaa;
+    color: var(--text-light); /* Text menjadi putih terang saat hover */
+    background-color: var(--gray-bg); /* Background sedikit lebih gelap untuk kontras */
+    border-color: var(--gray);
   }
 
   .btn-disabled {
-    background-color: #cccccc;
-    border-color: #bbbbbb;
-    color: #666666;
+    background-color: var(--bg-light);
+    border-color: var(--gray-bg);
+    color: var(--gray-bg2);
     cursor: not-allowed;
     transition: all 0.3s ease; /* Transisi yang halus saat perubahan */
   }
