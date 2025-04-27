@@ -1,9 +1,11 @@
 <!-- Index page -->
-<% if notice.present? %>
-  <p class="notification notification-success" id="notice">
-    <%= notice %>
-  </p>
-<% end %>
+<div data-controller="notification">
+  <% if notice.present? %>
+    <p class="notification notification-success" id="notice" data-notification-target="notification">
+      <%= notice %>
+    </p>
+  <% end %>
+</div>
 
 <div class="container">
   <h1 class="page-title">Task Manager</h1>
